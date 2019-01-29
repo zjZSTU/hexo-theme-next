@@ -66,6 +66,11 @@
         {% endif %}
 
         <div class="post-meta">
+          {% if post.top %}
+            <i class="fa fa-thumb-tack"></i>
+            <font color=7D26CD>置顶</font>
+            <span class="post-meta-divider">|</span>
+          {% endif %}
           <span class="post-time">
 
             {% set date_diff = date(post.date) != date(post.updated) %}
@@ -197,6 +202,14 @@
                 <span class="leancloud-visitors-count"></span>
             </span>
           {% endif %}
+
+          <!-- <span id="busuanzi_container_page_pv">
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-eye"></i>
+            </span>
+            阅读量: <span id="busuanzi_value_page_pv"></span>次
+          </span> -->
 
           {% if not is_index and theme.busuanzi_count.enable and theme.busuanzi_count.post_views %}
             <span class="post-meta-divider">|</span>
