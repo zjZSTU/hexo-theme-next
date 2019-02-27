@@ -207,6 +207,7 @@ links_layout: block
 #links_layout: inline
 links:
   # Title: http://example.com
+  Android Dev: https://developer.android.com/
 
 # Sidebar Avatar
 avatar:
