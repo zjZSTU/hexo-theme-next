@@ -121,5 +121,10 @@
   {% include '_third-party/bookmark.swig' %}
   {% include '_third-party/copy-code.swig' %}
   {% include '_third-party/pdf.swig' %}
+
+  <!-- 代码块复制功能 -->
+  <script type="text/javascript" src="/js/src/clipboard.min.js"></script>  
+  <script type="text/javascript" src="/js/src/clipboard-use.js"></script>
+
 </body>
 </html>
