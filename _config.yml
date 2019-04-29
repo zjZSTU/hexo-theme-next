@@ -178,7 +178,8 @@ site_state: true
 social:
   Github: https://github.com/zjZSTU || github
   CSDN: https://blog.csdn.net/u012005313 || book
-  Email: mailto:zjzstu@gmail.com || envelope
+  Gmail: mailto:zjzstu@gmail.com || envelope
+  QQmail: mailto:505169307@gmail.com || envelope
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
@@ -210,6 +211,9 @@ links:
   # Title: http://example.com
   Android Dev: https://developer.android.com/
   Jenkins: https://jenkins.io/
+  cs231n: http://cs231n.github.io/
+  pytorch: https://pytorch.org/docs/stable/index.html
+  docker: https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
 # Sidebar Avatar
 avatar:
