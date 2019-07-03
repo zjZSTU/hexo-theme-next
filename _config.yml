@@ -91,7 +91,8 @@ footer:
   # http://www.miitbeian.gov.cn
   beian:
     enable: true
-    icp: 浙ICP备19026415号-1
+    icp: 浙ICP备 19026415号
+    gongan: 浙公网安备 33011802001748号
 
   # -------------------------------------------------------------
   # Any custom text can be defined here.

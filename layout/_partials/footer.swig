@@ -1,8 +1,10 @@
 <div class="copyright">{#
 #}{% set current = date(Date.now(), "YYYY") %}{#
-#}{% if theme.footer.beian.enable %}{#
-#}  {{ next_url('http://www.miitbeian.gov.cn', theme.footer.beian.icp + ' ') }}{#
-#}{% endif %}{#
+#}
+<!-- {% if theme.footer.beian.enable %}{# 
+  #}  {{ next_url('http://www.miitbeian.gov.cn', theme.footer.beian.icp + ' ') }}{#
+  #}{% endif %} -->
+{# 
 #}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }} – {% endif %}{#
 #}<span itemprop="copyrightYear">{{ current }}</span>
   <span class="with-love" id="animate">
@@ -48,8 +50,6 @@
   </span> -->
 </div>
 
-
-
 {% if theme.footer.powered.enable %}
   <div class="powered-by">{#
   #}{{ __('footer.powered', next_url('https://hexo.io', 'Hexo', {class: 'theme-link'})) }}{#
@@ -72,4 +72,18 @@
   <div class="footer-custom">{#
   #}{{ theme.footer.custom_text }}{#
 #}</div>
+{% endif %}
+
+{% if theme.footer.beian.enable %}
+  <div>
+    {{ next_url('http://www.miitbeian.gov.cn', theme.footer.beian.icp) }}
+
+    <span class="post-meta-divider">|</span>
+  
+    <img src="/images/beian_icon.png" style="display:inline-block;text-decoration:none;height:13px;" />
+    
+    {{ next_url('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011802001748', theme.footer.beian.gongan) }}
+
+  </div>
+
 {% endif %}
