@@ -38,6 +38,12 @@
   #}</span>
   {% endif %}
 
+  <span class="post-meta-divider">|</span>
+  <span class="post-meta-item-icon">
+    <i class="fa fa-bar-chart-o"></i>
+  </span>
+  {{ next_url('https://tongji.baidu.com/web/27249108/overview/index?siteId=13647183', '百度统计') }}
+
   <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
   </script>
 
