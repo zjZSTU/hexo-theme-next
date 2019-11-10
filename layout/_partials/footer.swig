@@ -1,4 +1,4 @@
-{%- if theme.footer.beian.enable %}
+<!-- {%- if theme.footer.beian.enable %}
   <div class="beian">
     {{- next_url('http://www.beian.miit.gov.cn', theme.footer.beian.icp + ' ') }}
     {%- if theme.footer.beian.gongan_icon_url %}
@@ -7,7 +7,7 @@
     {{- next_url('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=' + theme.footer.beian.gongan_id,
     theme.footer.beian.gongan_num + ' ') }}
   </div>
-{%- endif %}
+{%- endif %}-->
 
 <div class="copyright">
   {% set copyright_year = date(null, 'YYYY') %}
@@ -70,3 +70,17 @@
 {%- endif %}
 
 {{- next_inject('footer') }}
+
+{%- if theme.footer.beian.enable %}
+  <div class="beian">
+    {{ next_url('http://www.beian.miit.gov.cn', theme.footer.beian.icp) }}
+
+    <span class="post-meta-divider">|</span>
+  
+    <img src="/images/beian_icon.png" style="display:inline-block;text-decoration:none;height:13px;" />
+   
+    {{ next_url('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode='+theme.footer.beian.gongan_id, theme.footer.beian.gongan_num) }}
+
+  </div>
+
+{%- endif %}
