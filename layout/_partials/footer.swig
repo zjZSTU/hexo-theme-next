@@ -39,6 +39,12 @@
     {%- endif %}
     <span title="{{ __('symbols_count_time.time_total') }}">{{ symbolsTimeTotal(site, theme.symbols_count_time.awl, theme.symbols_count_time.wpm, __('symbols_count_time.time_minutes')) }}</span>
   {%- endif %}
+
+  <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+    <i class="fa fa-bar-chart-o"></i>
+  </span>
+    {{ next_url('https://tongji.baidu.com/web/27249108/overview/index?siteId=13647183', '百度统计') }}
 </div>
 
 {%- if theme.footer.powered.enable %}
