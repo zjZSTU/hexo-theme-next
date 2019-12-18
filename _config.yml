@@ -438,7 +438,9 @@ font:
   global:
     external: true
     # family: Lato
-    family: Noto Serif SC
+    # family: Noto Serif SC
+    # family: Montserrat
+    family: Roboto
     size:
 
   # Font settings for site title (.site-title).

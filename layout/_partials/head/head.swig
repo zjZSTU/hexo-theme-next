@@ -96,3 +96,7 @@
     sidebarPadding: 40
   };
 </script>
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Serif+SC&display=swap" rel="stylesheet"> -->
+
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Roboto&display=swap" rel="stylesheet">
